@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    <title>Recipe card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Arial', sans-serif;
+            background-color: #dce1de;
+            display: grid;
+            place-items: center;
+            min-height: 100vh; /* Make sure the body takes at least the height of the viewport */
+        }
+        .container{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 250px 500px;
+            margin: 50px auto;
+            overflow: hidden; /* Ensure the container doesn't expand beyond its size */
+            background-color: #efefef;
+        }
+        img{
+            width: 100%; /* Make the image responsive */
+            height: 100%; /* Make the image responsive */
+            object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+        }
+        .recipe-description{
+            text-align: start;
+            padding: 20px; /* Add some padding for better readability */
+        }
+        h1 {
+            margin-bottom: 10px; /* Add some space below the heading */
+        }
+        
+        p {
+            margin: 15px 0;
+        }
+        button{
+            width: 35%;
+            padding: 10px;
+            background-color: #a3ccbe;
+            color: black;
+            margin-top: 15px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        hr{
+            border: 1px dotted #aa1515;
+        }
+        .fa{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-image">
+            <img src="https://fakeimg.pl/300x300/efefef/909090" alt="recipe-name">
+        </div>
+    
+        <div class="recipe-description">
+            <h1>Recipe name</h1>
+            <hr>
+            <p>Recipe description</p>
+            <div class="details">
+                <i class="fa fa-clock"></i>  Prep time<br>
+                <i class="fa fa-utensils"></i>  No.of Servings
+            </div>
+            <button>View Recipe &gt;</button>
+            
+        </div>
+    </div>
+</body>
+</html>
