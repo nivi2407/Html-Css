@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+
+    <title>PictureCanvas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Aboreto', sans-serif;
+            background-color: #f5f2f2;
+            text-align: center; /* Center the text content */
+        }
+        p {
+            padding-bottom: 50px;
+        }
+        h1{
+            font-family: 'Rubik Doodle Shadow';
+            padding-top: 30px;
+        }
+        .container {
+            overflow: hidden; /* Clear float */
+        }
+        
+        .first {
+            float: left;
+            width: 33.33%;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(70%);
+            transition: filter 0.3s ease-in-out;
+        }
+
+        img:hover {
+            filter: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>PictureCanvas</h1>
+    <p>Transforming moments into arts</p>
+    <div class="container">
+        <div class="first">
+            <img src="https://images.pexels.com/photos/126271/pexels-photo-126271.jpeg">
+            <img src="https://images.pexels.com/photos/620337/pexels-photo-620337.jpeg">
+            <img src="https://images.pexels.com/photos/1006121/pexels-photo-1006121.jpeg">
+            <img src="https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg">
+        </div>
+        <div class="first">
+            <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg">
+            <img src="https://images.pexels.com/photos/698736/pexels-photo-698736.jpeg">
+            <img src="https://images.pexels.com/photos/457538/pexels-photo-457538.jpeg">
+            <img src="https://images.pexels.com/photos/1366630/pexels-photo-1366630.jpeg">
+
+        </div>
+        <div class="first">
+            <img src="https://images.rawpixel.com/image_500/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTI3MTA0MS1pbWFnZS1rd3Z5MGR6by5qcGc.jpg">
+            <img src="https://images.rawpixel.com/image_500/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3AtNDMzLWx1a2VzdGFja3Bvb2xlLWNvc3ktaHV0LWNhcmQtYS1nLWpvYjU4MC5qcGc.jpg">
+            <img src="https://images.pexels.com/photos/957089/veil-cases-waterfall-autumn-alpine-957089.jpeg">
+            <img src="https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg">
+
+        </div>
+    </div>
+</body>
+</html>
