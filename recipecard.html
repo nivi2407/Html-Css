@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    <title>Recipe card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    
+    <title>Recipe card</title>
     <style>
         * {
             margin: 0;
@@ -12,10 +13,10 @@
         }
         body{
             font-family: 'Arial', sans-serif;
-            background-color: #dce1de;
+            background-color: #efefef;
             display: grid;
             place-items: center;
-            min-height: 100vh; /* Make sure the body takes at least the height of the viewport */
+            min-height: 100vh; /* the body takes at least the height of the viewport */
         }
         .container{
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,20 +24,20 @@
             display: grid;
             grid-template-columns: 250px 500px;
             margin: 50px auto;
-            overflow: hidden; /* Ensure the container doesn't expand beyond its size */
-            background-color: #efefef;
+            overflow: hidden; 
+            background-color: #f2eae4;
         }
         img{
-            width: 100%; /* Make the image responsive */
-            height: 100%; /* Make the image responsive */
-            object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
         }
         .recipe-description{
             text-align: start;
-            padding: 20px; /* Add some padding for better readability */
+            padding: 20px; /* for better readability */
         }
         h1 {
-            margin-bottom: 10px; /* Add some space below the heading */
+            margin-bottom: 10px; 
         }
         
         p {
@@ -45,34 +46,34 @@
         button{
             width: 35%;
             padding: 10px;
-            background-color: #a3ccbe;
-            color: black;
+            background-color: #f1d5aa;
+            color: #000;
             margin-top: 15px;
             font-size: 20px;
             border: none;
             border-radius: 10px;
         }
         hr{
-            border: 1px dotted #aa1515;
+            border: 1px double #aa1515;
         }
         .fa{
-            margin-top: 15px;
+            padding: 3px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="recipe-image">
-            <img src="https://fakeimg.pl/300x300/efefef/909090" alt="recipe-name">
+            <img src="https://supervalu.ie/thumbnail/1440x480/var/files/real-food/recipes/Uploaded-2020/spaghetti-bolognese-recipe.jpg" alt="Spaghetti Bolognese">
         </div>
     
         <div class="recipe-description">
-            <h1>Recipe name</h1>
+            <h1>Spaghetti Bolognese</h1>
             <hr>
-            <p>Recipe description</p>
+            <p>Classic Italian dish with savory meat sauce served over spaghetti.</p>
             <div class="details">
-                <i class="fa fa-clock"></i>  Prep time<br>
-                <i class="fa fa-utensils"></i>  No.of Servings
+                <i class="fa fa-clock"></i> 50 mins<br>
+                <i class="fa fa-utensils"></i> Serves 6
             </div>
             <button>View Recipe &gt;</button>
             
